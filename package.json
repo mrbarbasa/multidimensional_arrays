@@ -1,0 +1,15 @@
+{
+  "name": "multidimensional_arrays",
+  "version": "0.0.0",
+  "description": "An exercise using multidimensional arrays",
+  "main": "MultidimensionalArray.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marifel Barbasa",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^1.9.2",
+    "mocha": "^2.0.1"
+  }
+}
