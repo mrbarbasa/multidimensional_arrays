@@ -14,14 +14,14 @@ describe('MultidimensionalArray.count', function() {
       expect(something).to.be.a('string');
       something.should.equal('some value');
     });
-  });
+  }); // end called with two arguments: sample_array, true
 
   describe('called with two arguments: sample_array, false', function() {
 
-  });
+  }); // called with two arguments: sample_array, false
 
   describe('called with two arguments: sample_array, "red"', function() {
 
-  });
+  }); // called with two arguments: sample_array, "red"
 
 });
