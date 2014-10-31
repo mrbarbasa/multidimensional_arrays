@@ -48,9 +48,29 @@ module.exports = (function() {
 
     return contents;
   };
+  this.count = function(array, value) {
+    var valueCount = 0;
+    var arrValue;
 
-  this.count = function() {
+    for (var i = 0; i < array.length; i++) {
+      arrValue = array[i];
+      if (arrValue instanceof Array) {
+        valueCount += this.count(arrValue, value);
+      }
+      else {
+        if (value === true && arrValue === 1) {
+          valueCount++;
+        }
+        else if (value === false && arrValue === 0) {
+          valueCount++;
+        }
+        else if (value === arrValue) {
+          valueCount++;
+        }
+      }
+    }
 
+    return valueCount;
   };
 
   return this;
